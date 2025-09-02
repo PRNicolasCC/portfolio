@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@darkMode "class";
+
+/* tailwind css v4.x */
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@theme {
+    --color-clementine-50: #fff9ec;
+    --color-clementine-100: #fff2d3;
+    --color-clementine-200: #ffe0a5;
+    --color-clementine-300: #ffc96d;
+    --color-clementine-400: #ffa732;
+    --color-clementine-500: #ff8b0a;
+    --color-clementine-600: #e66700;
+    --color-clementine-700: #cc5202;
+    --color-clementine-800: #a1400b;
+    --color-clementine-900: #82360c;
+    --color-clementine-950: #461904;
+    --font-customcode: "Fira Code", monospace;
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5; */
+  color-scheme: light dark;
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: "Onest Variable", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
