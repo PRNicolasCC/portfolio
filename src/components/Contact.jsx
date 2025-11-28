@@ -14,7 +14,7 @@ const Contact = () => {
           {/* Social links */}
           <div className="flex space-x-8">
             <a
-              href="https://github.com/tu-usuario"
+              href="https://github.com/PRNicolasCC"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center space-y-2 p-4 transition-all duration-300 hover:scale-105 rounded-full bg-clementine-600 hover:bg-gray-200"
@@ -25,7 +25,7 @@ const Contact = () => {
             </a>
             
             <a
-              href="https://linkedin.com/in/tu-perfil"
+              href="https://www.linkedin.com/in/nicolas-cueca-carpeta-41753b1b0/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center space-y-2 p-4 transition-all duration-300 hover:scale-105 rounded-full bg-clementine-600 hover:bg-gray-200"
@@ -38,7 +38,7 @@ const Contact = () => {
             </a>
             
             <a
-              href="mailto:tu-email@ejemplo.com"
+              href="mailto:n800912@gmail.com"
               className="group flex flex-col items-center space-y-2 p-4 transition-all duration-300 hover:scale-105 rounded-full bg-clementine-600 hover:bg-gray-200"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-12 h-12 text-gray-300 group-hover:text-clementine-500 transition-colors duration-300" viewBox="0 0 16 16">

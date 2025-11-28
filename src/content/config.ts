@@ -50,11 +50,14 @@ export const languages: Language[] = [
     technologies: [
       { name: "HTML", level: "Avanzado", icon: "html", classes: "text-orange-500" },
       { name: "CSS", level: "Avanzado", icon: "css", classes: "text-blue-500" },
-      { name: "JavaScript", level: "Avanzado", icon: "javascript", classes: "text-yellow-400" },
-      { name: "jQuery", level: "Intermedio", icon: "jquery", classes: "text-blue-600" },
-      { name: "React JS", level: "Avanzado", icon: "react", classes: "text-blue-400" },
       { name: "Bootstrap", level: "Avanzado", icon: "bootstrap", classes: "text-purple-800" },
-      { name: "Tailwind CSS", level: "Avanzado", icon: "tailwind", classes: "text-blue-400" }
+      { name: "Tailwind", level: "Avanzado", icon: "tailwind", classes: "text-blue-400" },
+      { name: "JavaScript", level: "Avanzado", icon: "javascript", classes: "text-yellow-400" },
+      { name: "TypeScript", level: "Avanzado", icon: "typescript", classes: "text-blue-500" },
+      { name: "jQuery", level: "Intermedio", icon: "jquery", classes: "text-blue-600" },
+      { name: "React", level: "Avanzado", icon: "react", classes: "text-blue-400" },
+      { name: "Astro", level: "Avanzado", icon: "astro", classes: "text-orange-600" },
+      { name: "Wordpress", level: "Avanzado", icon: "wordpress", classes: "text-blue-500" },
     ]
   },
   {
@@ -63,22 +66,26 @@ export const languages: Language[] = [
     icon: "⚙️",
     description: "Herramientas para desarrollo del lado del servidor y APIs",
     technologies: [
-      { name: "Node.js", level: "Avanzado", icon: "node", classes: "text-green-800" },
-      { name: "PHP", level: "Avanzado", icon: "php", classes: "text-blue-800" },
+      /* { name: "Node.js", level: "Avanzado", icon: "node", classes: "text-green-800" }, */
+      { name: "PHP", level: "Avanzado", icon: "php", classes: "text-blue-700" },
       { name: "Laravel", level: "Intermedio", icon: "laravel", classes: "text-red-600" },
       { name: "Python", level: "Avanzado", icon: "python", classes: "text-blue-400" },
       { name: "FastAPI", level: "Intermedio", icon: "fastapi", classes: "text-green-300" },
-      { name: "Java", level: "Intermedio", icon: "java", classes: "text-red-600" }
+      { name: "Django", level: "Principiante", icon: "django", classes: "text-green-400" },
+      /* { name: "Java", level: "Intermedio", icon: "java", classes: "text-red-600" } */
     ]
   },
   {
     id: 3,
-    name: "Base de Datos & Sistemas",
+    name: "Bases de Datos & Sistemas",
     icon: "💾",
     description: "Gestión de datos y administración de sistemas",
     technologies: [
       { name: "MySQL", level: "Avanzado", icon: "mysql", classes: "text-blue-800" },
-      { name: "Linux", level: "Intermedio", icon: "linux", classes: "text-black" }
+      { name: "PostgreSQL", level: "Intermedio", icon: "postgresql", classes: "text-blue-800" },
+      { name: "Ubuntu", level: "Intermedio", icon: "ubuntu", classes: "text-orange-500" },
+      { name: "RHEL", level: "Intermedio", icon: "redhat", classes: "text-red-700" },
+      /* { name: "Linux", level: "Intermedio", icon: "linux", classes: "text-black" } */
     ]
   }
 ];
@@ -88,11 +95,11 @@ export const experiences: Experience[] = [
     id: 1,
       company: "Cootransfusa",
       position: "Desarrollador Full-Stack y Auxiliar de Sistemas",
-      duration: "Febrero 2023 - Presente",
+      duration: "Febrero 2023 - Agosto 2025",
       location: "Fusagasugá, Colombia",
       description: "Desarrollando y manteniendo aplicaciones web, administrando sistemas y gestionando servidores",
       responsibilities: [
-        "Desarrollo, despliegue y mantenimiento de aplicaciones web utilizando tecnologías como Bootstrasp, JavaScript, React, PHP y MySQL",
+        "Desarrollo, despliegue y mantenimiento de aplicaciones web utilizando tecnologías como Bootstrasp, JavaScript, jQuery, React, PHP y MySQL",
         "Administración y monitoreo de sistemas informáticos para garantizar su disponibilidad y seguridad",
         "Configuración y administración de servidores con sistemas operativos basados en Linux",
         "Análisis de requerimientos y planteamiento de soluciones al sector mediante el uso de código",
@@ -108,7 +115,7 @@ export const experiences: Experience[] = [
     description: "Creación y mantenimiento de páginas web y aplicaciones corporativas",
     responsibilities: [
       "Análisis y desarrollo de software con participación en la creación y mantenimiento de funcionalidades básicas",
-      "Dominio de Frontend y Backend, trabajando en entornos de desarrollo usando HTML, CSS, Bootstrap, JavaScript, PHP y MySQL",
+      "Dominio de Frontend y Backend, trabajando en entornos de desarrollo usando Bootstrap, JavaScript, jQuery, PHP y MySQL",
       "Pruebas en los aplicativos para garantizar su correcto funcionamiento",
       "Adaptacion frontend de las aplicaciones a partir de diseños o plantillas previamente realizadas",
       "Soporte técnico a usuarios para resolución de incidencias y asistencia en el uso de sistemas"

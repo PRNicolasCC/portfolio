@@ -55,20 +55,6 @@ function Experience () {
                 ))}
               </ul>
             </div>
-
-            {/* <div>
-              <h5 className="font-semibold text-gray-800 mb-2">Tecnologías:</h5>
-              <div className="flex flex-wrap gap-2">
-                {exp.technologies.map((tech, index) => (
-                  <span 
-                    key={index}
-                    className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div> */}
           </div>
         ))}
       </div>
