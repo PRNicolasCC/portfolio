@@ -9,5 +9,5 @@ export default defineConfig({
     tailwindcss(),
   ],
   // Para poder desplegar en github pages y para que las imágenes se carguen correctamente
-  base: '/portfolio',
+  //base: '/portfolio',
 })

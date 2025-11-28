@@ -19,7 +19,7 @@ function Intro () {
                             {/* Imagen del programador */}
                             <div className="absolute inset-2 rounded-full overflow-hidden bg-gradient-to-br from-gray-200 to-gray-400 shadow-2xl bg-gradient-to-t from-black/20 to-transparent hover:from-blue-300 z-1">
                                 <img 
-                                    src="/portfolio/myself.png" 
+                                    src="/myself.png" 
                                     alt="Nicolas Cueca - Programador Full-Stack" 
                                     className="object-cover hover:scale-105 transition-transform duration-500 z-30 animate-none"
                                 />
