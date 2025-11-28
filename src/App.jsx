@@ -1,28 +1,18 @@
-import { useState, useEffect } from 'react'
-import Intro from './components/Intro';
-import Layout from './layouts/Layout';
-import Projects from './components/Projects';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Experience from './components/Experience';
-import Stack from './components/Stack';
+import Index from './layouts/Index';
+import Error404 from './components/pages/Error404';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
-    <Layout>
-
-	
-      <Intro />
-      <AboutMe />
-      <Experience />
-      <Projects />
-      <Stack />
-      <Contact />
-      
-
-    
-    </Layout>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/" element={<Index />} />        
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
