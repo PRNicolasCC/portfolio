@@ -6,7 +6,6 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Stack from './components/Stack';
-/* import AnimatedNavbar from './components/ScrollExample'; */
 
 function App() {
 

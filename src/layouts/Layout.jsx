@@ -2,30 +2,10 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 
 function Layout (props) {
-/* import "../styles/global.css";
-
-import Header from "../components/Header.astro";
-//import { ClientRouter } from 'astro:transitions';
-import Main from "../components/Main.astro"; */
 
 return (
 	
 	<>
-	{/* <head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{props.title}</title> 
-		
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet"> 
-		<!-- Animación entre páginas (fade-in & fade-out) -->
-		<!-- <ClientRouter /> -->
-	</head>
-	<body> */ }
 		<div className="absolute inset-0 bg-white dark:bg-gray-950">
 			<div 
 			  className="absolute inset-0 opacity-[0.07] dark:opacity-[0.05]"
@@ -47,8 +27,6 @@ return (
 				{props.children}
 			</Main>
 		</div>
-		{/* </body>
-</html> */}
 	</>
 	
 	)
