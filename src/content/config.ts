@@ -72,7 +72,7 @@ export const languages: Language[] = [
       { name: "Python", level: "Avanzado", icon: "python", classes: "text-blue-400" },
       { name: "FastAPI", level: "Intermedio", icon: "fastapi", classes: "text-green-300" },
       { name: "Django", level: "Principiante", icon: "django", classes: "text-green-400" },
-      /* { name: "Java", level: "Intermedio", icon: "java", classes: "text-red-600" } */
+      { name: "Java", level: "Intermedio", icon: "java", classes: "text-red-600" }
     ]
   },
   {

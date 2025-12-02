@@ -12,7 +12,7 @@ import {
   SiAstro,
   SiTypescript,
 } from "react-icons/si";
-import { FaReact, FaWordpress /* FaJava */ } from "react-icons/fa6";
+import { FaReact, FaWordpress, FaJava } from "react-icons/fa6";
 import { FaBootstrap, FaLaravel, FaUbuntu /* FaLinux */ } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -35,7 +35,7 @@ const iconMap = {
   astro: SiAstro,
   typescript: SiTypescript,
   wordpress: FaWordpress,
-  /* java: FaJava, */
+  java: FaJava,
   mysql: GrMysql,
   /* linux: FaLinux, */
   postgresql: BiLogoPostgresql,
