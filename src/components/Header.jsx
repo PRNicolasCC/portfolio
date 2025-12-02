@@ -19,9 +19,8 @@ function Header () {
   const listaNavbar = [
     { href: '#aboutme', name: 'Sobre mí'}, 
     { href: '#experience', name: 'Experiencia' },
-    { href: '#projects', name: 'Proyectos'}, 
+    /* { href: '#projects', name: 'Proyectos'},  */
     { href: '#stack', name: 'Stack' },
-    /* { href: '#cv', name: 'Curriculum'} */
     
   ];
 

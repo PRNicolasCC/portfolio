@@ -12,7 +12,7 @@ function Index(){
             <Intro />
             <AboutMe />
             <Experience />
-            <Projects />
+            {/* <Projects /> */}
             <Stack />
             <Contact />
         </Layout>
