@@ -118,7 +118,7 @@ function Header () {
           <div className={`group flex xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse animate-fade-down animate-once mx-4
             ${isMenuOpen && isScrolled ? 'hidden' : ''}
             ${!isMenuOpen && isScrolled ? 'hidden' : ''}`}>
-              <a href="#cv" className={`cursor-pointer hidden relative xl:inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-gray-100 px-6 font-medium text-clementine-100 hover:text-clementine-600 hover:delay-200 text-xl
+              <a target="_blank" href="/curriculum.pdf" className={`cursor-pointer hidden relative xl:inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-gray-100 px-6 font-medium text-clementine-100 hover:text-clementine-600 hover:delay-200 text-xl
                 ${!isMenuOpen && isScrolled ? 'hidden' : ''}`} id="contactBtn">
                 <span className="absolute h-56 w-100 rounded-full bg-clementine-600 transition-all duration-300 group-hover:h-0 group-hover:w-0"></span>
                 <span className="relative">
@@ -160,7 +160,7 @@ function Header () {
                 ))
               }
               <li key="contact">
-                <a href="#cv" className={`xl:hidden inline py-2 px-3 text-gray-90 xl:hover:text-clementine-100 xl:dark:hover:text-clementine-500 transition-color duration-300 dark:text-clementine-100 dark:hover:text-white dark:border-gray-700
+                <a target="_blank" href="/curriculum.pdf" className={`xl:hidden inline py-2 px-3 text-gray-90 xl:hover:text-clementine-100 xl:dark:hover:text-clementine-500 transition-color duration-300 dark:text-clementine-100 dark:hover:text-white dark:border-gray-700
                   ${isMenuOpen ? 'xl:inline xl:mr-10' : ''}`}>
                     Ver CV
                 </a>
