@@ -7,40 +7,6 @@ export type Project = z.infer<typeof projectSchema>;
 export type Language = z.infer<typeof languageSchema>;
 export type Experience = z.infer<typeof experienceSchema>;
 
-// Ejemplo de datos para tus colecciones
-export const projects: Project[] = [
-  {
-    title: 'pasajeros',
-    author: 'Nicolas Cueca',
-    img: 'pasajeros.PNG',
-    description: 'Sistema de gestión de pasajeros',
-  },
-  {
-    title: 'nomina',
-    author: 'Nicolas Cueca',
-    img: 'nomina.PNG',
-    description: 'Sistema de cálculo de comisiones de vehículos y conductores',
-  },
-  {
-    title: 'mantenimiento',
-    author: 'Nicolas Cueca',
-    img: 'mantenimiento.PNG',
-    description: 'Sistema de inspecciones preoperacionales',
-  },
-  {
-    title: 'enturne',
-    author: 'Nicolas Cueca',
-    img: 'enturne.PNG',
-    description: 'Sistema de sorteos para horarios del transporte intermunicipal',
-  },
-  {
-    title: 'empleados',
-    author: 'Nicolas Cueca',
-    img: 'empleados.PNG',
-    description: 'Aplicación web para empleados de Cootransfusa',
-  },
-];
-
 export const languages: Language[] = [
   {
     id: 1,
@@ -122,3 +88,86 @@ export const experiences: Experience[] = [
     ],
   }
 ];
+
+export const projects = [
+    {
+      id: 1,
+      name: "E-commerce Platform",
+      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop",
+      category: "Aplicación Web",
+      duration: "3 meses",
+      status: "Completado",
+      description: "Plataforma de comercio electrónico completa con sistema de pagos integrado, gestión de inventario y panel administrativo",
+      features: [
+        "Sistema de autenticación y autorización",
+        "Carrito de compras con persistencia",
+        "Integración con pasarelas de pago (PayU, Mercado Pago)",
+        "Panel de administración para gestión de productos",
+        "Sistema de notificaciones por email",
+        "Diseño responsive y optimización móvil"
+      ],
+      technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT", "Tailwind CSS"],
+      liveUrl: "https://ejemplo-ecommerce.com",
+      githubUrl: "https://github.com/usuario/ecommerce-platform"
+    },
+    {
+      id: 2,
+      name: "Task Management App",
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=500&fit=crop",
+      category: "Aplicación Móvil/Web",
+      duration: "2 meses",
+      status: "En desarrollo",
+      description: "Aplicación de gestión de tareas colaborativa con funcionalidades de tiempo real y sincronización entre dispositivos",
+      features: [
+        "Creación y asignación de tareas en equipo",
+        "Chat en tiempo real con Socket.io",
+        "Sincronización automática entre dispositivos",
+        "Notificaciones push personalizables",
+        "Reportes y analytics de productividad",
+        "Integración con Google Calendar"
+      ],
+      technologies: ["React Native", "Express.js", "PostgreSQL", "Socket.io", "Redux", "Firebase"],
+      liveUrl: null,
+      githubUrl: "https://github.com/usuario/task-manager"
+    },
+    {
+      id: 3,
+      name: "Portfolio Personal",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop",
+      category: "Sitio Web",
+      duration: "1 mes",
+      status: "Completado",
+      description: "Sitio web personal con diseño moderno, optimizado para SEO y rendimiento, incluyendo blog y formulario de contacto",
+      features: [
+        "Diseño responsive y animaciones suaves",
+        "Blog integrado con CMS headless",
+        "Formulario de contacto funcional",
+        "Optimización SEO y meta tags dinámicos",
+        "Modo oscuro/claro",
+        "Integración con Google Analytics"
+      ],
+      technologies: ["Next.js", "TypeScript", "Sanity CMS", "Framer Motion", "Vercel"],
+      liveUrl: "https://mi-portfolio.com",
+      githubUrl: "https://github.com/usuario/portfolio"
+    },
+    {
+      id: 4,
+      name: "Weather Dashboard",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=500&fit=crop",
+      category: "Aplicación Web",
+      duration: "2 semanas",
+      status: "Completado",
+      description: "Dashboard meteorológico interactivo con mapas, gráficos y predicciones extendidas para múltiples ciudades",
+      features: [
+        "Búsqueda de ciudades con autocompletado",
+        "Mapas interactivos con capas meteorológicas",
+        "Gráficos de tendencias de temperatura y precipitación",
+        "Predicción extendida a 7 días",
+        "Geolocalización automática",
+        "Favoritos y historial de búsquedas"
+      ],
+      technologies: ["Vue.js", "Chart.js", "Leaflet", "OpenWeather API", "Vuetify"],
+      liveUrl: "https://weather-dashboard-demo.com",
+      githubUrl: "https://github.com/usuario/weather-dashboard"
+    }
+  ];
