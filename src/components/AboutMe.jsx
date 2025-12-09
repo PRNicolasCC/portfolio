@@ -20,7 +20,6 @@ function AboutMe () {
 
             <div className="my-8 bg-gray-800 p-4 lg:p-8 rounded-lg border-2 border-clementine-600 transition-all duration-300 hover:shadow-sm hover:shadow-clementine-500 w-full lg:w-auto">
                 <p className="leading-relaxed text-base lg:text-lg text-clementine-200">
-                    {/* Experiencia de más de 2 años en el análisis, desarrollo e implementación de aplicaciones web corporativas. He colaborado en diferentes proyectos dentro de las organizaciones en las que he participado, utilizando diversas herramientas de programación para funcionalidades de front-end, back-end, bases de datos, Dev-Ops y Testing. Constantemente me encuentro aprendiendo y explorando nuevas tecnologías con el fin de incorporar las mejores herramientas y técnicas de la industria para los proyectos en los que trabajo. */}
                     Hola, soy Nicolas Cueca, un Desarrollador de Software apasionado por crear experiencias digitales rápidas, confiables y con propósito. Durante los últimos tres años he trabajado en empresas tecnológicas y de transporte, apoyando su transformación a través del desarrollo web moderno y soluciones de despliegue.
                     Mi trabajo se caracteriza por la creatividad, la precisión técnica y una mentalidad proactiva. <br />
                     Cada proyecto es una oportunidad para aprender, innovar y construir tecnología que impulse a las personas y a las organizaciones hacia adelante.

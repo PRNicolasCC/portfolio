@@ -143,6 +143,17 @@ function Projects() {
             </div>
           ))}
         </div>
+
+        <div className="my-8 bg-gray-800 p-4 lg:p-8 rounded-lg border-2 border-clementine-600 transition-all duration-300 hover:shadow-sm hover:shadow-clementine-500 w-full lg:w-auto">
+            <p className="leading-relaxed text-base lg:text-lg text-clementine-200 text-center">
+                Para conocer más información de estos y otros proyectos, puedes ir a la sección de proyectos de mi Linkedin en el siguiente enlace:
+                <br /><br />
+                <a target="_blank" href="https://www.linkedin.com/in/nicolas-cueca-carpeta-41753b1b0/details/projects/">
+                  <button className="bg-clementine-600 p-4 rounded-lg cursor-pointer text-clementine-100 hover:bg-clementine-700 transition-colors">Proyectos en Linkedin</button>
+                </a>
+            </p>
+        </div>
+
       </div>
     </>
   );
