@@ -32,7 +32,6 @@ export const languages: Language[] = [
     icon: "⚙️",
     description: "Herramientas para desarrollo del lado del servidor y APIs",
     technologies: [
-      /* { name: "Node.js", level: "Avanzado", icon: "node", classes: "text-green-800" }, */
       { name: "PHP", level: "Avanzado", icon: "php", classes: "text-blue-700" },
       { name: "Laravel", level: "Intermedio", icon: "laravel", classes: "text-red-600" },
       { name: "Python", level: "Avanzado", icon: "python", classes: "text-blue-400" },
@@ -51,7 +50,6 @@ export const languages: Language[] = [
       { name: "PostgreSQL", level: "Intermedio", icon: "postgresql", classes: "text-blue-800" },
       { name: "Ubuntu", level: "Intermedio", icon: "ubuntu", classes: "text-orange-500" },
       { name: "RHEL", level: "Intermedio", icon: "redhat", classes: "text-red-700" },
-      /* { name: "Linux", level: "Intermedio", icon: "linux", classes: "text-black" } */
     ]
   }
 ];
@@ -92,82 +90,145 @@ export const experiences: Experience[] = [
 export const projects = [
     {
       id: 1,
-      name: "E-commerce Platform",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop",
+      name: "Mindraft",
+      image: "projects/mindraft.png",
       category: "Aplicación Web",
-      duration: "3 meses",
-      status: "Completado",
-      description: "Plataforma de comercio electrónico completa con sistema de pagos integrado, gestión de inventario y panel administrativo",
+      duration: "1 mes",
+      status: "En desarrollo",
+      description: "Aplicación moderna para tomar notas que permite a los usuarios crear, editar y organizar apuntes dentro de diferentes cuadernos. El objetivo del proyecto es ofrecer una interfaz sencilla e intuitiva para gestionar información personal, ideas, notas de estudio y más",
       features: [
-        "Sistema de autenticación y autorización",
-        "Carrito de compras con persistencia",
-        "Integración con pasarelas de pago (PayU, Mercado Pago)",
-        "Panel de administración para gestión de productos",
-        "Sistema de notificaciones por email",
-        "Diseño responsive y optimización móvil"
+        "Crear y administrar cuadernos",
+        "Crear, editar y eliminar notas en cada cuaderno",
+        "Registro de usuarios",
+        "Inicio de sesión y manejo seguro de sesiones",
+        "Recuperación de contraseña mediante correo electrónico",
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT", "Tailwind CSS"],
-      liveUrl: "https://ejemplo-ecommerce.com",
-      githubUrl: "https://github.com/usuario/ecommerce-platform"
+      technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+      liveUrl: "https://mindraft.nicolascueca.dev",
+      githubUrl: "https://github.com/PRNicolasCC/mindraft"
     },
     {
       id: 2,
-      name: "Task Management App",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=500&fit=crop",
-      category: "Aplicación Móvil/Web",
-      duration: "2 meses",
-      status: "En desarrollo",
-      description: "Aplicación de gestión de tareas colaborativa con funcionalidades de tiempo real y sincronización entre dispositivos",
-      features: [
-        "Creación y asignación de tareas en equipo",
-        "Chat en tiempo real con Socket.io",
-        "Sincronización automática entre dispositivos",
-        "Notificaciones push personalizables",
-        "Reportes y analytics de productividad",
-        "Integración con Google Calendar"
-      ],
-      technologies: ["React Native", "Express.js", "PostgreSQL", "Socket.io", "Redux", "Firebase"],
-      liveUrl: null,
-      githubUrl: "https://github.com/usuario/task-manager"
-    },
-    {
-      id: 3,
-      name: "Portfolio Personal",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop",
+      name: "Portafolio Personal",
+      image: "projects/portfolio.png",
       category: "Sitio Web",
       duration: "1 mes",
       status: "Completado",
-      description: "Sitio web personal con diseño moderno, optimizado para SEO y rendimiento, incluyendo blog y formulario de contacto",
+      description: "Sitio web personal diseñado con un enfoque moderno y limpio, priorizando la usabilidad y una experiencia visual atractiva. Incluye secciones dedicadas a mi trayectoria, habilidades y proyectos destacados, presentadas mediante una interfaz sencilla, accesible y adaptable a diferentes dispositivos.",
       features: [
         "Diseño responsive y animaciones suaves",
-        "Blog integrado con CMS headless",
-        "Formulario de contacto funcional",
-        "Optimización SEO y meta tags dinámicos",
-        "Modo oscuro/claro",
-        "Integración con Google Analytics"
+        "Animaciones al realizar scroll en cada seccíon",
+        "Enlaces externos a mi curriculum y redes sociales",
       ],
-      technologies: ["Next.js", "TypeScript", "Sanity CMS", "Framer Motion", "Vercel"],
-      liveUrl: "https://mi-portfolio.com",
-      githubUrl: "https://github.com/usuario/portfolio"
+      technologies: ["Tailwind", "JavaScript", "TypeScript", "React"],
+      liveUrl: "",
+      githubUrl: "https://github.com/PRNicolasCC/portfolio"
+    },
+    {
+      id: 3,
+      name: "Página Web Oficial de Cootranstibacuy",
+      image: "projects/cootranstibacuy.png",
+      category: "Sitio web",
+      duration: "2 semanas",
+      status: "Completado",
+      description: "Diseño y desarrollo del sitio web oficial de Cootranstibacuy, una empresa de transporte terrestre de pasajeros. El proyecto presenta una interfaz moderna y funcional que facilita el acceso a información clave como rutas, horarios y servicios. La experiencia del usuario fue priorizada para ofrecer una plataforma clara, accesible y adaptada a diferentes dispositivos",
+      features: [
+        "Animaciones al realizar el primer scroll en cada seccíon",
+        "Formulario de PQRS funcional",
+        "Información de contacto y redes sociales",
+        "Datos de sercicios, rutas, precios, horarios y agencias",
+      ],
+      technologies: ["Tailwind", "TypeScript", "Astro"],
+      liveUrl: "https://cootranstibacuy.vercel.app/",
+      githubUrl: ""
     },
     {
       id: 4,
-      name: "Weather Dashboard",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=500&fit=crop",
-      category: "Aplicación Web",
+      name: "Consulta de información administrativa y financiera para asociados",
+      image: "projects/asociados.png",
+      category: "Aplicación web",
+      duration: "2 años",
+      status: "En desarrollo",
+      description: "En este proyecto colaboré en la creación de una plataforma interna diseñada para centralizar y agilizar el acceso de los asociados a información clave, incluyendo reportes de combustible, producciones, peajes, extractos financieros, estado de cartera, fondos de reposición, certificaciones de ingreso y comunicados institucionales",
+      features: [
+        "Reportes de combustible para vehículos de la cooperativa y vehículos particulares",
+        "Consulta de producidos y peajes de vehículos del servicio intermunicipal",
+        "Generación de extractos financieros",
+        "Generación de certificaciones de ingreso",
+        "Extracto de estado de cartera",
+        "Información de fondos de reposición",
+        "Publicaciones de comunicados de interés general",
+      ],
+      technologies: ["PHP", "JavaScript", "MySQL", "FirebirdSQL", "jQuery", "Bootstrap"],
+      liveUrl: "https://cootransfusa.com/gas_station/",
+      githubUrl: ""
+    },
+    {
+      id: 5,
+      name: "Gestión de monitoreo de vehículos del servicio intermunicipal",
+      image: "projects/monitoreo.png",
+      category: "Aplicación web",
+      duration: "1 mes",
+      status: "Completado",
+      description: "Esta herramienta fue desarrollada para centralizar el registro y la consulta de los reportes diarios de los viajes realizados por los vehículos del servicio intermunicipal. Su implementación permite a los colaboradores gestionar la información operativa de forma más ágil y organizada, mejorando la trazabilidad de cada recorrido y facilitando la toma de decisiones basadas en datos precisos y actualizados",
+      features: [
+        "Registro de reportes de monitoreo de los servicios de cada vehículo",
+        "Consulta y edición de reportes registrados",
+        "Categorización de reportes por vehículo y fecha",
+      ],
+      technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+      liveUrl: "https://cootransfusa.com/monitoreo/",
+      githubUrl: ""
+    },
+    {
+      id: 6,
+      name: "Actualización de datos de pasajeros",
+      image: "projects/pasajeros.png",
+      category: "Aplicación web",
       duration: "2 semanas",
       status: "Completado",
-      description: "Dashboard meteorológico interactivo con mapas, gráficos y predicciones extendidas para múltiples ciudades",
+      description: "Para mejorar la calidad de la información y asegurar la correcta emisión de facturas electrónicas, se desarrolló un sistema que permite a los pasajeros consultar y actualizar sus datos personales de forma sencilla y segura.",
       features: [
-        "Búsqueda de ciudades con autocompletado",
-        "Mapas interactivos con capas meteorológicas",
-        "Gráficos de tendencias de temperatura y precipitación",
-        "Predicción extendida a 7 días",
-        "Geolocalización automática",
-        "Favoritos y historial de búsquedas"
+        "Consultar sus datos registrados por pasajero",
+        "Actualizar información personal y de contacto",
+        "Mantener su perfil siempre al día para evitar inconsistencias en la facturación electrónica",
       ],
-      technologies: ["Vue.js", "Chart.js", "Leaflet", "OpenWeather API", "Vuetify"],
-      liveUrl: "https://weather-dashboard-demo.com",
-      githubUrl: "https://github.com/usuario/weather-dashboard"
-    }
+      technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+      liveUrl: "https://cootransfusa.com/registrofac/index.php?action=formulario",
+      githubUrl: ""
+    },
+    {
+      id: 7,
+      name: "Sorteos para horarios de salida del transporte intermunicipal",
+      image: "projects/sorteos.png",
+      category: "Aplicación web",
+      duration: "1 mes",
+      status: "Completado",
+      description: "Con el propósito de optimizar la organización diaria de la operación intermunicipal de Cootransfusa, se desarrolló una plataforma que permite a los conductores registrarse desde el terminal donde iniciarán su ruta. Cada noche, el sistema ejecuta un sorteo automático que define el orden y la hora de presentación para el primer trayecto del día siguiente",
+      features: [
+        "Registro centralizado de conductores y vehículos por terminal",
+        "Sorteo nocturno automático para definir turnos",
+        "Consulta del orden de salida y horarios asignados",
+      ],
+      technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+      liveUrl: "https://cootransfusa.com/enturne_inter/",
+      githubUrl: ""
+    },
+    {
+      id: 8,
+      name: "Consultas de información para clientes preferenciales",
+      image: "projects/preferencial.png",
+      category: "Aplicación web",
+      duration: "2 semanas",
+      status: "Completado",
+      description: "Cootransfusa ofrece un programa de beneficios para pasajeros frecuentes que incluye descuentos en pasajes, acceso prioritario en taquillas y el uso de una tarjeta preferencial para adquirir tiquetes con ventajas adicionales. Con el objetivo de modernizar este proceso y mejorar la experiencia del usuario, se desarrolló una plataforma que digitaliza por completo este sistema de beneficios. La solución integra una tarjeta virtual, permite a los pasajeros visualizar su saldo en tiempo real y consultar el historial de facturas de viajes dentro de un periodo determinado.",
+      features: [
+        "Consulta del historial de facturas de viajes en un periodo determinado",
+        "Una tarjeta virtual, que representa digitalmente la tarjeta preferencial",
+        "Visualización del saldo actual del usuario",
+      ],
+      technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+      liveUrl: "https://cootransfusa.com/pasajeros/",
+      githubUrl: ""
+    },
   ];
