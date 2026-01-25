@@ -37,10 +37,10 @@ function Intro () {
                         .type("Desarrollador de Software Full Stack")
                         .pause(1500)
                         .delete(null)
-                        .type("Creador de páginas y aplicaciones web")
+                        .type("Especializado en análisis y resolucuión de problemas")
                         .pause(1500)
                         .delete(null)
-                        .type("Estudiante de Ingeniería de Software")
+                        .type("Creador de soluciones digitales de alto impacto")
                         .pause(1500);
 
                         return instance;
