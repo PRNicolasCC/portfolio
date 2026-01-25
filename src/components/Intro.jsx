@@ -23,15 +23,7 @@ function Intro () {
                                     alt="Nicolas Cueca - Programador Full-Stack" 
                                     className="object-cover hover:scale-105 transition-transform duration-500 z-30 animate-none"
                                 />
-                                
-                                {/* Overlay sutil */}
-                                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent hover:from-blue-300 hover:to-blue-500 z-1"></div> */}
                             </div>
-                            
-                            {/* Elementos decorativos flotantes */}
-                            {/* <div className="absolute -top-4 -right-4 w-8 h-8 bg-orange-400 rounded-full opacity-80 animate-bounce"></div>
-                            <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-red-500 rounded-full opacity-60 animate-pulse"></div>
-                            <div className="absolute top-1/4 -left-6 w-4 h-4 bg-orange-300 rounded-full opacity-50 animate-ping animate-infinite animate-duration-[2000ms] animate-delay-[2500ms]"></div> */}
                         </div>
                     </div>
                 </div>
@@ -42,7 +34,7 @@ function Intro () {
                     className="text-pretty text-3xl text-left text-clementine-100"
                     getBeforeInit={(instance) => {
                         instance
-                        .type("Desarrollador de Software Full-Stack")
+                        .type("Desarrollador de Software Full Stack")
                         .pause(1500)
                         .delete(null)
                         .type("Creador de páginas y aplicaciones web")
@@ -59,7 +51,6 @@ function Intro () {
                         loop: true, // Repite el texto indefinidamente
                     }}
             >
-                {/* This is a placeholder that will be replaced (default). */}
             </TypeIt>
                 <h1 className="text-pretty text-7xl text-left text-clementine-300 opacity-100 mt-2">Hola, soy <span className="text-clementine-600 font-bold text-shadow-lg/30 text-shadow-clementine-500">Nicolas Cueca</span></h1>
             </div>
