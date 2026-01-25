@@ -14,15 +14,16 @@ export const languages: Language[] = [
     icon: "🎨",
     description: "Tecnologías para crear interfaces de usuario modernas y responsivas",
     technologies: [
-      { name: "HTML", level: "Avanzado", icon: "html", classes: "text-orange-500" },
-      { name: "CSS", level: "Avanzado", icon: "css", classes: "text-blue-500" },
-      { name: "Bootstrap", level: "Avanzado", icon: "bootstrap", classes: "text-purple-800" },
-      { name: "Tailwind", level: "Avanzado", icon: "tailwind", classes: "text-blue-400" },
-      { name: "JavaScript", level: "Avanzado", icon: "javascript", classes: "text-yellow-400" },
-      { name: "TypeScript", level: "Avanzado", icon: "typescript", classes: "text-blue-500" },
-      { name: "jQuery", level: "Intermedio", icon: "jquery", classes: "text-blue-600" },
-      { name: "React", level: "Avanzado", icon: "react", classes: "text-blue-400" },
-      { name: "Wordpress", level: "Avanzado", icon: "wordpress", classes: "text-blue-500" },
+      { name: "HTML", icon: "html", classes: "text-orange-500" },
+      { name: "CSS", icon: "css", classes: "text-blue-500" },
+      { name: "Bootstrap", icon: "bootstrap", classes: "text-purple-800" },
+      { name: "Tailwind", icon: "tailwind", classes: "text-blue-400" },
+      { name: "JavaScript", icon: "javascript", classes: "text-yellow-400" },
+      { name: "TypeScript", icon: "typescript", classes: "text-blue-500" },
+      { name: "jQuery", icon: "jquery", classes: "text-blue-600" },
+      { name: "Angular", icon: "angular", classes: "text-red-600" },
+      { name: "React", icon: "react", classes: "text-blue-400" },
+      { name: "Wordpress", icon: "wordpress", classes: "text-blue-500" },
     ]
   },
   {
@@ -31,12 +32,13 @@ export const languages: Language[] = [
     icon: "⚙️",
     description: "Herramientas para desarrollo del lado del servidor y APIs",
     technologies: [
-      { name: "PHP", level: "Avanzado", icon: "php", classes: "text-blue-700" },
-      { name: "Laravel", level: "Intermedio", icon: "laravel", classes: "text-red-600" },
-      { name: "Python", level: "Avanzado", icon: "python", classes: "text-blue-400" },
-      { name: "FastAPI", level: "Intermedio", icon: "fastapi", classes: "text-green-300" },
-      { name: "Django", level: "Principiante", icon: "django", classes: "text-green-400" },
-      { name: "Java", level: "Intermedio", icon: "java", classes: "text-red-600" }
+      { name: "PHP", icon: "php", classes: "text-blue-700" },
+      { name: "Laravel", icon: "laravel", classes: "text-red-600" },
+      { name: "Python", icon: "python", classes: "text-blue-400" },
+      { name: "FastAPI", icon: "fastapi", classes: "text-green-300" },
+      { name: "Django", icon: "django", classes: "text-green-400" },
+      { name: "Java", icon: "java", classes: "text-red-600" },
+      { name: "Docker", icon: "docker", classes: "text-blue-700" }
     ]
   },
   {
@@ -45,10 +47,10 @@ export const languages: Language[] = [
     icon: "💾",
     description: "Gestión de datos y administración de sistemas",
     technologies: [
-      { name: "MySQL", level: "Avanzado", icon: "mysql", classes: "text-blue-800" },
-      { name: "PostgreSQL", level: "Intermedio", icon: "postgresql", classes: "text-blue-800" },
-      { name: "Ubuntu", level: "Intermedio", icon: "ubuntu", classes: "text-orange-500" },
-      { name: "RHEL", level: "Intermedio", icon: "redhat", classes: "text-red-700" },
+      { name: "MySQL", icon: "mysql", classes: "text-blue-800" },
+      { name: "PostgreSQL", icon: "postgresql", classes: "text-blue-800" },
+      { name: "Ubuntu", icon: "ubuntu", classes: "text-orange-500" },
+      { name: "RHEL", icon: "redhat", classes: "text-red-700" },
     ]
   }
 ];
