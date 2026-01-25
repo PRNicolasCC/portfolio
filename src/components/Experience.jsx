@@ -37,7 +37,6 @@ function Experience () {
               </h4>
               <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                 <span className="font-medium">📅 {exp.duration}</span>
-                <span>📍 {exp.location}</span>
               </div>
             </div>
 

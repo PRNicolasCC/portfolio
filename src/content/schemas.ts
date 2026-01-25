@@ -26,7 +26,5 @@ export const experienceSchema = z.object({
   company: z.string(),
   position: z.string(),
   duration: z.string(),
-  location: z.string(),
-  description: z.string(),
   responsibilities: z.array(z.string()),
 });

@@ -22,7 +22,6 @@ export const languages: Language[] = [
       { name: "TypeScript", level: "Avanzado", icon: "typescript", classes: "text-blue-500" },
       { name: "jQuery", level: "Intermedio", icon: "jquery", classes: "text-blue-600" },
       { name: "React", level: "Avanzado", icon: "react", classes: "text-blue-400" },
-      { name: "Astro", level: "Avanzado", icon: "astro", classes: "text-orange-600" },
       { name: "Wordpress", level: "Avanzado", icon: "wordpress", classes: "text-blue-500" },
     ]
   },
@@ -58,31 +57,25 @@ export const experiences: Experience[] = [
   {
     id: 1,
       company: "Cootransfusa",
-      position: "Desarrollador Full-Stack y Auxiliar de Sistemas",
-      duration: "Febrero 2023 - Agosto 2025",
-      location: "Fusagasugá, Colombia",
-      description: "Desarrollando y manteniendo aplicaciones web, administrando sistemas y gestionando servidores",
+      position: "Desarrollador Full Stack",
+      duration: "2023 - 2025",
       responsibilities: [
-        "Desarrollo, despliegue y mantenimiento de aplicaciones web utilizando tecnologías como Bootstrasp, JavaScript, jQuery, React, PHP y MySQL",
-        "Administración y monitoreo de sistemas informáticos para garantizar su disponibilidad y seguridad",
-        "Configuración y administración de servidores con sistemas operativos basados en Linux",
-        "Análisis de requerimientos y planteamiento de soluciones al sector mediante el uso de código",
-        "Desarrollo Backend y de APIs para la correcta comunicación de las aplicaciones y la información de los servidores"
+        "Desarrollé las principales aplicaciones web para los usuarios de la empresa",
+        "Lideré la planificación de diversos proyectos, proporcioné soluciones y mantuve aplicaciones en producción",
+        "Entregué automatizaciones enfocadas en mejorar la productividad y la efectividad en las tareas de otras áreas de la empresa",
+        "Administré servidores en producción, máquinas virtuales y bases de datos corporativas",
+        "Brindé soporte técnico de las aplicaciones a usuarios finales"
       ],
   },
   {
     id: 2,
     company: "Jacktek",
-    position: "Aprendiz de análisis y desarrollo de sistemas de información",
-    duration: "Octubre 2021 - Abril 2022",
-    location: "Cajicá, Colombia",
-    description: "Creación y mantenimiento de páginas web y aplicaciones corporativas",
+    position: "Aprendiz - análisis y desarrollo de sistemas de información",
+    duration: "2021 - 2022",
     responsibilities: [
-      "Análisis y desarrollo de software con participación en la creación y mantenimiento de funcionalidades básicas",
-      "Dominio de Frontend y Backend, trabajando en entornos de desarrollo usando Bootstrap, JavaScript, jQuery, PHP y MySQL",
-      "Pruebas en los aplicativos para garantizar su correcto funcionamiento",
-      "Adaptacion frontend de las aplicaciones a partir de diseños o plantillas previamente realizadas",
-      "Soporte técnico a usuarios para resolución de incidencias y asistencia en el uso de sistemas"
+      "Contribuí a proyectos desde el diseño hasta la implementación funcional utilizando HTML, CSS, JavaScript y PHP",
+      "Construí documentación relacionada con los aplicativos construidos",
+      "Brindé soporte técnico relacionado a los proyectos implementados"
     ],
   }
 ];
