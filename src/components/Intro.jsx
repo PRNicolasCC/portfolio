@@ -37,7 +37,7 @@ function Intro () {
                         .type("Desarrollador de Software Full Stack")
                         .pause(1500)
                         .delete(null)
-                        .type("Especializado en análisis y resolucuión de problemas")
+                        .type("Especializado en análisis y resolución de problemas")
                         .pause(1500)
                         .delete(null)
                         .type("Creador de soluciones digitales de alto impacto")
