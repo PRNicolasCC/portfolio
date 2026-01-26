@@ -10,7 +10,10 @@ export const projectSchema = z.object({
 export const languageSchema = z.object({
   id: z.number(),
   name: z.string(),
-  icon: z.string(),
+  icon: z.object({
+    name: z.string(),
+    classes: z.string(),
+  }),
   description: z.string(),
   technologies: z.array(z.object({
     name: z.string(),

@@ -11,11 +11,14 @@ import {
   SiAngular,
   SiTypescript
 } from "react-icons/si";
-import { FaReact, FaWordpress, FaJava } from "react-icons/fa6";
-import { FaBootstrap, FaLaravel, FaUbuntu } from "react-icons/fa";
+import { FaBootstrap, FaLaravel, FaUbuntu, FaServer  } from "react-icons/fa";
+import { FaReact, FaWordpress, FaJava, FaFolderClosed  } from "react-icons/fa6";
 import { GrMysql, GrDocker } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedhat } from "react-icons/di";
+import { TbWorld } from "react-icons/tb";
+import { PiPaintBrushFill } from "react-icons/pi";
+import { IoServerSharp } from "react-icons/io5";
 
 const iconMap = {
   html: SiHtml5,
@@ -39,16 +42,22 @@ const iconMap = {
   ubuntu: FaUbuntu,
   redhat: DiRedhat,
   docker: GrDocker,
+
+  website: TbWorld,
+  code: FaFolderClosed,
+  frontend: PiPaintBrushFill,
+  backend: FaServer,
+  systems: IoServerSharp,
 };
 
-const Icon = ({ nombre, color, classes, ...props }) => {
+const Icon = ({ nombre, classes, ...props }) => {
   const IconComponent = iconMap[nombre];
   
   if (!IconComponent) {
     return null; // o un ícono por defecto
   }
   
-  return <IconComponent color={color} className={`w-full h-full ${classes}`} />;
+  return <IconComponent className={classes} />;
 };
 
 export default Icon;

@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import { experiences } from '../content/config';
+import Icon from './icons/Icon';
 
 function Experience () {
   useEffect(() => {AOS.init()}, []);
@@ -36,7 +37,7 @@ function Experience () {
                 {exp.company}
               </h4>
               <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-                <span className="font-medium">📅 {exp.duration}</span>
+                <span className="font-medium">{exp.duration}</span>
               </div>
             </div>
 

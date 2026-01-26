@@ -31,7 +31,7 @@ function Stack() {
           >
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-2xl">{category.icon}</span>
+                <span className="text-2xl"><Icon nombre={category.icon.name} classes={category.icon.classes} /></span>
                 <h3 className="text-xl font-bold text-clementine-500">
                   {category.name}
                 </h3>
@@ -50,17 +50,12 @@ function Stack() {
                   title={tech.name}
                 >
                   <div className="w-10 h-10 flex items-center justify-center">
-                    <Icon nombre={tech.icon} color={tech.color} classes={tech.classes} />
+                    <Icon nombre={tech.icon} classes={`w-full h-full ${tech.classes}`} />
                   </div>
 
                   <div className="text-clementine-900 font-semibold">
                     {tech.name}
                   </div>
-                  
-                  {/* Tooltip */}
-                  {/* <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    {tech.name}
-                  </div> */}
                 </div>
               ))}
             </div>

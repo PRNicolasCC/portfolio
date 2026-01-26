@@ -11,7 +11,10 @@ export const languages: Language[] = [
   {
     id: 1,
     name: "Frontend",
-    icon: "🎨",
+    icon: {
+      name: "frontend",
+      classes: "text-purple-600"
+    },
     description: "Tecnologías para crear interfaces de usuario modernas y responsivas",
     technologies: [
       { name: "HTML", icon: "html", classes: "text-orange-500" },
@@ -29,7 +32,10 @@ export const languages: Language[] = [
   {
     id: 2,
     name: "Backend",
-    icon: "⚙️",
+    icon: {
+      name: "backend",
+      classes: "text-gray-300"
+    },
     description: "Herramientas para desarrollo del lado del servidor y APIs",
     technologies: [
       { name: "PHP", icon: "php", classes: "text-blue-700" },
@@ -44,7 +50,10 @@ export const languages: Language[] = [
   {
     id: 3,
     name: "Bases de Datos & Sistemas",
-    icon: "💾",
+    icon: {
+      name: "systems",
+      classes: "text-gray-500"
+    },
     description: "Gestión de datos y administración de sistemas",
     technologies: [
       { name: "MySQL", icon: "mysql", classes: "text-blue-800" },
@@ -88,7 +97,6 @@ export const projects = [
     name: "Mindraft",
     image: "projects/mindraft.png",
     category: "Aplicación Web",
-    duration: "1 mes",
     status: "En desarrollo",
     description: "Aplicación moderna para tomar notas que permite a los usuarios crear, editar y organizar apuntes dentro de diferentes cuadernos. El objetivo del proyecto es ofrecer una interfaz sencilla e intuitiva para gestionar información personal, ideas, notas de estudio y más",
     features: [
@@ -107,7 +115,6 @@ export const projects = [
     name: "Página Web Oficial de Cootranstibacuy",
     image: "projects/cootranstibacuy.png",
     category: "Sitio web",
-    duration: "2 semanas",
     status: "Completado",
     description: "Diseño y desarrollo del sitio web oficial de Cootranstibacuy, una empresa de transporte terrestre de pasajeros. El proyecto presenta una interfaz moderna y funcional que facilita el acceso a información clave como rutas, horarios y servicios. La experiencia del usuario fue priorizada para ofrecer una plataforma clara, accesible y adaptada a diferentes dispositivos",
     features: [
@@ -125,7 +132,6 @@ export const projects = [
     name: "Consulta de información administrativa y financiera para asociados",
     image: "projects/asociados.png",
     category: "Aplicación web",
-    duration: "2 años",
     status: "En desarrollo",
     description: "En este proyecto colaboré en la creación de una plataforma interna diseñada para centralizar y agilizar el acceso de los asociados a información clave, incluyendo reportes de combustible, producciones, peajes, extractos financieros, estado de cartera, fondos de reposición, certificaciones de ingreso y comunicados institucionales",
     features: [
@@ -146,7 +152,6 @@ export const projects = [
     name: "Gestión de monitoreo de vehículos del servicio intermunicipal",
     image: "projects/monitoreo.png",
     category: "Aplicación web",
-    duration: "1 mes",
     status: "Completado",
     description: "Esta herramienta fue desarrollada para centralizar el registro y la consulta de los reportes diarios de los viajes realizados por los vehículos del servicio intermunicipal. Su implementación permite a los colaboradores gestionar la información operativa de forma más ágil y organizada, mejorando la trazabilidad de cada recorrido y facilitando la toma de decisiones basadas en datos precisos y actualizados",
     features: [
@@ -163,7 +168,6 @@ export const projects = [
     name: "Actualización de datos de pasajeros",
     image: "projects/pasajeros.png",
     category: "Aplicación web",
-    duration: "2 semanas",
     status: "Completado",
     description: "Para mejorar la calidad de la información y asegurar la correcta emisión de facturas electrónicas, se desarrolló un sistema que permite a los pasajeros consultar y actualizar sus datos personales de forma sencilla y segura.",
     features: [
@@ -180,7 +184,6 @@ export const projects = [
     name: "Sorteos para horarios de salida del transporte intermunicipal",
     image: "projects/sorteos.png",
     category: "Aplicación web",
-    duration: "1 mes",
     status: "Completado",
     description: "Con el propósito de optimizar la organización diaria de la operación intermunicipal de Cootransfusa, se desarrolló una plataforma que permite a los conductores registrarse desde el terminal donde iniciarán su ruta. Cada noche, el sistema ejecuta un sorteo automático que define el orden y la hora de presentación para el primer trayecto del día siguiente",
     features: [
@@ -197,7 +200,6 @@ export const projects = [
     name: "Consultas de información para clientes preferenciales",
     image: "projects/preferencial.png",
     category: "Aplicación web",
-    duration: "2 semanas",
     status: "Completado",
     description: "Cootransfusa ofrece un programa de beneficios para pasajeros frecuentes que incluye descuentos en pasajes, acceso prioritario en taquillas y el uso de una tarjeta preferencial para adquirir tiquetes con ventajas adicionales. Con el objetivo de modernizar este proceso y mejorar la experiencia del usuario, se desarrolló una plataforma que digitaliza por completo este sistema de beneficios. La solución integra una tarjeta virtual, permite a los pasajeros visualizar su saldo en tiempo real y consultar el historial de facturas de viajes dentro de un periodo determinado.",
     features: [

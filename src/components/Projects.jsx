@@ -1,7 +1,9 @@
 import { projects, languages } from "../content/config";
 import { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'
+
+import Icon from './icons/Icon';
 
 function Projects() {
   useEffect(() => {AOS.init()}, []);
@@ -75,11 +77,6 @@ function Projects() {
                       {project.status}
                     </span>
                   </div>
-                  
-                  <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-2">
-                    <span className="font-medium">📁 {project.category}</span>
-                    <span>⏱️ {project.duration}</span>
-                  </div>
                 </div>
 
                 <p className="text-gray-300 mb-4 text-lg italic">
@@ -124,7 +121,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 bg-orange-500 text-white px-3 py-2 rounded text-xs font-medium hover:bg-orange-600 transition-colors"
                     >
-                      🌐 Ver Demo
+                      <Icon nombre='website' classes='w-6 h-6 text-blue-600' /> Ver Demo
                     </a>
                   )}
                   
@@ -135,7 +132,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 bg-gray-700 text-white px-3 py-2 rounded text-xs font-medium hover:bg-gray-900 transition-colors"
                     >
-                      📂 Código
+                      <Icon nombre='code' classes='w-6 h-6 text-yellow-300' /> Código
                     </a>
                   )}
                 </div>
