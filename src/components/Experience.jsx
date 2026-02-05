@@ -3,7 +3,6 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import { experiences } from '../content/config';
-import Icon from './icons/Icon';
 
 function Experience () {
   useEffect(() => {AOS.init()}, []);
@@ -46,7 +45,7 @@ function Experience () {
             </p>
 
             <div className="mb-4">
-              <h5 className="font-semibold text-clementine-400 mb-2">Responsabilidades:</h5>
+              <h5 className="font-semibold text-clementine-400 mb-2">Objetivos alcanzados:</h5>
               <ul className="list-disc list-inside space-y-5 text-clementine-200">
                 {exp.responsibilities.map((resp, index) => (
                   <li key={index} className="text-base">

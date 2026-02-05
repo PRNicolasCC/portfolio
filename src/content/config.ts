@@ -68,25 +68,30 @@ export const experiences: Experience[] = [
   {
     id: 1,
       company: "Cootransfusa",
-      position: "Desarrollador Full Stack",
+      position: "Desarrollador Full Stack y Auxiliar de Sistemas",
       duration: "2023 - 2025",
       responsibilities: [
-        "Desarrollé las principales aplicaciones web para los usuarios de la empresa",
-        "Lideré la planificación de diversos proyectos, proporcioné soluciones y mantuve aplicaciones en producción",
-        "Entregué automatizaciones enfocadas en mejorar la productividad y la efectividad en las tareas de otras áreas de la empresa",
-        "Administré servidores en producción, máquinas virtuales y bases de datos corporativas",
-        "Brindé soporte técnico de las aplicaciones a usuarios finales"
+        "Desarrollé, implementé y mantuve 15 aplicaciones de software principalmente usando HTML, CSS, Bootstrap, JavaScript, jQuery, PHP y MySQL.",
+        "Colaboré en el desarrollo y gestión de 5 bases de datos corporativas integradas con las aplicaciones de software.",
+        "Creé scripts personalizados para tareas automatizadas que ahorraron entre 1 y 2 días de tiempo de trabajo cada semana y al mismo tiempo redujeron el error humano.",
+        "Configuré y administré 10 servidores junto con aproximadamente 5 máquinas virtuales en cada uno, las cuales se ejecutaban en diversas versiones de sistemas operativos Windows y Linux.",
+        "Desarrollé manuales de usuario y materiales de capacitación para nuevas funciones del sistema, mejorando las tasas de adopción por parte de los usuarios.",
+        "Ejecuté aproximadamente 300 copias de seguridad de diferentes bases de datos.",
+        "Gestioné el funcionamiento de los sistemas ERP y operativo para la gestión financiera y administrativa.",
+        "Instalé y gestioné antivirus y parches de seguridad en apróximadamente el 80% de los equipos activos.",
       ],
   },
   {
     id: 2,
     company: "Jacktek",
-    position: "Aprendiz - análisis y desarrollo de sistemas de información",
-    duration: "2021 - 2022",
+    position: "Técnico de soporte TI",
+    duration: "2021 - 2023",
     responsibilities: [
-      "Contribuí a proyectos desde el diseño hasta la implementación funcional utilizando HTML, CSS, JavaScript y PHP",
-      "Construí documentación relacionada con los aplicativos construidos",
-      "Brindé soporte técnico relacionado a los proyectos implementados"
+      "Contribuí a proyectos desde el diseño hasta la implementación funcional utilizando HTML, CSS, JavaScript y PHP.",
+      "Colaboré con los miembros del equipo para agilizar los procesos de resolución de problemas y mejorar los tiempos de respuesta.",
+      "Ejecuté aproximadamente 100 copias de seguridad de información almacenada en diferentes bases de datos.",
+      "Asistí a los usuarios con la instalación y configuración del software, garantizando una funcionalidad óptima en toda la organización.",
+      "Desarrollé documentación integral para los procesos de soporte, lo que permitió una resolución de problemas más rápida para los miembros del equipo de soporte técnico.",
     ],
   }
 ];

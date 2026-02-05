@@ -111,7 +111,7 @@ function Header () {
           </div>
 
           <div 
-            className={`fixed top-0 left-0 right-0 text-2xl w-full animate-flip-down animate-once
+            className={`fixed top-0 text-2xl w-full animate-flip-down animate-once
               ${isMenuOpen ? 'bg-gray-900 h-full z-40 lg:text-4xl' : '' }
               ${!isMenuOpen && !isScrolled ? 'xl:mt-10 hidden xl:inline' : ''}
               ${!isMenuOpen && isScrolled ? 'xl:mt-10 hidden' : ''}`}
