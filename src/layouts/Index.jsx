@@ -11,8 +11,8 @@ function Index(){
         <Layout>
             <Intro />
             <AboutMe />
-            <Experience />
             <Projects />
+            <Experience />            
             <Stack />
             <Contact />
         </Layout>

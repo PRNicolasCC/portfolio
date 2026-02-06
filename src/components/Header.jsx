@@ -13,8 +13,8 @@ function Header () {
 
   const listaNavbar = [
     { href: '#aboutme', name: 'Sobre mí'}, 
-    { href: '#experience', name: 'Experiencia' },
     { href: '#projects', name: 'Proyectos'}, 
+    { href: '#experience', name: 'Experiencia' },
     { href: '#stack', name: 'Stack' },
     
   ];
@@ -112,7 +112,7 @@ function Header () {
 
           <div 
             className={`fixed top-0 text-2xl w-full animate-flip-down animate-once
-              ${isMenuOpen ? 'bg-gray-900 h-full z-40 lg:text-4xl' : '' }
+              ${isMenuOpen ? 'bg-gray-900 h-full z-40 lg:text-4xl left-0' : '' }
               ${!isMenuOpen && !isScrolled ? 'xl:mt-10 hidden xl:inline' : ''}
               ${!isMenuOpen && isScrolled ? 'xl:mt-10 hidden' : ''}`}
             id="navbar-sticky"
