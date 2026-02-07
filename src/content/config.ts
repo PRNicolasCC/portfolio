@@ -114,7 +114,7 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://mindraft.nicolascueca.dev",
     githubUrl: "https://github.com/PRNicolasCC/mindraft",
-    video: ""
+    gallery: []
   },
   {
     id: 2,
@@ -132,7 +132,7 @@ export const projects = [
     technologies: ["Tailwind", "TypeScript", "Astro"],
     liveUrl: "https://cootranstibacuy.vercel.app/",
     githubUrl: "",
-    video: ""
+    gallery: []
   },
   {
     id: 3,
@@ -153,7 +153,7 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "FirebirdSQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/gas_station/",
     githubUrl: "",
-    video: ""
+    gallery: []
   },
   {
     id: 4,
@@ -170,7 +170,7 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/monitoreo/",
     githubUrl: "",
-    video: ""
+    gallery: []
   },
   {
     id: 5,
@@ -187,7 +187,7 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/registrofac/index.php?action=formulario",
     githubUrl: "",
-    video: ""
+    gallery: []
   },
   {
     id: 6,
@@ -204,7 +204,7 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/enturne_inter/",
     githubUrl: "",
-    video: ""
+    gallery: []
   },
   {
     id: 7,
@@ -221,6 +221,6 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/pasajeros/",
     githubUrl: "",
-    video: ""
+    gallery: []
   },
   ];
