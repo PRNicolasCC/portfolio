@@ -5,6 +5,7 @@ export const projectSchema = z.object({
   author: z.string(),
   img: z.string(),
   description: z.string(),
+  video: z.string().optional(),
 });
 
 export const languageSchema = z.object({
