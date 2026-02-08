@@ -1,10 +1,43 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '../../content/config';
 import Icon from '../icons/Icon';
+import { useState, useEffect, useCallback } from 'react';
 
 function ProjectDetail() {
   const { id } = useParams();
   const project = projects.find(p => p.id === parseInt(id));
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleNextImage = useCallback(() => {
+    if (!selectedImage) return;
+    const currentIndex = project.gallery.findIndex(img => img === selectedImage);
+    const nextIndex = (currentIndex + 1) % project.gallery.length;
+    setSelectedImage(project.gallery[nextIndex]);
+  }, [selectedImage, project.gallery]);
+
+  const handlePrevImage = useCallback(() => {
+    if (!selectedImage) return;
+    const currentIndex = project.gallery.findIndex(img => img === selectedImage);
+    const prevIndex = (currentIndex - 1 + project.gallery.length) % project.gallery.length;
+    setSelectedImage(project.gallery[prevIndex]);
+  }, [selectedImage, project.gallery]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedImage) return;
+      
+      if (e.key === 'Escape') {
+        setSelectedImage(null);
+      } else if (e.key === 'ArrowLeft') {
+        handlePrevImage();
+      } else if (e.key === 'ArrowRight') {
+        handleNextImage();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImage, handleNextImage, handlePrevImage]);
 
   if (!project) {
     return (
@@ -65,13 +98,14 @@ function ProjectDetail() {
                     className={`relative overflow-hidden rounded-lg cursor-pointer group ${
                       index === 0 ? 'md:col-span-2 lg:col-span-2 lg:row-span-2' : ''
                     }`}
+                    onClick={() => setSelectedImage(img)}
                   >
                     <img 
                       src={`${import.meta.env.BASE_URL}projects/${img}`}
                       alt={`${project.name} - Imagen ${index + 1}`}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div className="absolute inset-0 group-hover:bg-opacity-30 transition-all duration-30"></div>
                   </div>
                 ))
               ) : (
@@ -155,6 +189,54 @@ function ProjectDetail() {
           </div>
         </div>
       </div>
+
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setSelectedImage(null);
+            }
+          }}
+        >
+          <button 
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 text-white hover:text-orange-500 transition-colors z-10 bg-gray-800 bg-opacity-50 rounded-full p-2 cursor-pointer"
+          >
+            <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <button 
+            onClick={handlePrevImage}
+            className="absolute left-4 text-white hover:text-orange-500 transition-colors z-10 bg-gray-800 bg-opacity-50 rounded-full p-2 cursor-pointer"
+          >
+            <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <img 
+            src={`${import.meta.env.BASE_URL}projects/${selectedImage}`}
+            alt="Imagen en pantalla completa"
+            className="max-w-full max-h-full object-contain"
+          />
+
+          <button 
+            onClick={handleNextImage}
+            className="absolute right-4 text-white hover:text-orange-500 transition-colors z-10 bg-gray-800 bg-opacity-50 rounded-full p-2 cursor-pointer"
+          >
+            <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
+            {project.gallery.indexOf(selectedImage) + 1} / {project.gallery.length}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
