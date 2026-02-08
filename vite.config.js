@@ -8,6 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  // Para poder desplegar en github pages cuando NO se tiene dominio personalizado y para que las imágenes se carguen correctamente
-  //base: '/portfolio',
+  base: '/',
 })

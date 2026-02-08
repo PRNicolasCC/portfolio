@@ -100,7 +100,7 @@ export const projects = [
   {
     id: 1,
     name: "Mindraft",
-    image: "projects/mindraft.png",
+    image: "mindraft.png",
     category: "Aplicación Web",
     status: "En desarrollo",
     description: "Aplicación moderna para tomar notas que permite a los usuarios crear, editar y organizar apuntes dentro de diferentes cuadernos. El objetivo del proyecto es ofrecer una interfaz sencilla e intuitiva para gestionar información personal, ideas, notas de estudio y más",
@@ -114,30 +114,18 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://mindraft.nicolascueca.dev",
     githubUrl: "https://github.com/PRNicolasCC/mindraft",
-    gallery: []
+    gallery: ["mindraft/1-login.png",
+       "mindraft/2-dashboard.png",
+       "mindraft/3-nuevo-cuaderno.png",
+       "mindraft/4-editar-cuadernos.png",
+       "mindraft/5-notas.png",
+       "mindraft/6-nueva-nota.png",
+       "mindraft/7-editar-nota.png"]
   },
   {
     id: 2,
-    name: "Página Web Oficial de Cootranstibacuy",
-    image: "projects/cootranstibacuy.png",
-    category: "Sitio web",
-    status: "Completado",
-    description: "Diseño y desarrollo del sitio web oficial de Cootranstibacuy, una empresa de transporte terrestre de pasajeros. El proyecto presenta una interfaz moderna y funcional que facilita el acceso a información clave como rutas, horarios y servicios. La experiencia del usuario fue priorizada para ofrecer una plataforma clara, accesible y adaptada a diferentes dispositivos",
-    features: [
-    "Animaciones al realizar el primer scroll en cada seccíon",
-    "Formulario de PQRS funcional",
-    "Información de contacto y redes sociales",
-    "Datos de sercicios, rutas, precios, horarios y agencias",
-    ],
-    technologies: ["Tailwind", "TypeScript", "Astro"],
-    liveUrl: "https://cootranstibacuy.vercel.app/",
-    githubUrl: "",
-    gallery: []
-  },
-  {
-    id: 3,
     name: "Consulta de información administrativa y financiera para asociados",
-    image: "projects/asociados.png",
+    image: "asociados.png",
     category: "Aplicación web",
     status: "En desarrollo",
     description: "En este proyecto colaboré en la creación de una plataforma interna diseñada para centralizar y agilizar el acceso de los asociados a información clave, incluyendo reportes de combustible, producciones, peajes, extractos financieros, estado de cartera, fondos de reposición, certificaciones de ingreso y comunicados institucionales",
@@ -156,9 +144,9 @@ export const projects = [
     gallery: []
   },
   {
-    id: 4,
+    id: 3,
     name: "Gestión de monitoreo de vehículos del servicio intermunicipal",
-    image: "projects/monitoreo.png",
+    image: "monitoreo.png",
     category: "Aplicación web",
     status: "Completado",
     description: "Esta herramienta fue desarrollada para centralizar el registro y la consulta de los reportes diarios de los viajes realizados por los vehículos del servicio intermunicipal. Su implementación permite a los colaboradores gestionar la información operativa de forma más ágil y organizada, mejorando la trazabilidad de cada recorrido y facilitando la toma de decisiones basadas en datos precisos y actualizados",
@@ -173,9 +161,9 @@ export const projects = [
     gallery: []
   },
   {
-    id: 5,
+    id: 4,
     name: "Actualización de datos de pasajeros",
-    image: "projects/pasajeros.png",
+    image: "pasajeros.png",
     category: "Aplicación web",
     status: "Completado",
     description: "Para mejorar la calidad de la información y asegurar la correcta emisión de facturas electrónicas, se desarrolló un sistema que permite a los pasajeros consultar y actualizar sus datos personales de forma sencilla y segura.",
@@ -190,9 +178,9 @@ export const projects = [
     gallery: []
   },
   {
-    id: 6,
+    id: 5,
     name: "Sorteos para horarios de salida del transporte intermunicipal",
-    image: "projects/sorteos.png",
+    image: "sorteos.png",
     category: "Aplicación web",
     status: "Completado",
     description: "Con el propósito de optimizar la organización diaria de la operación intermunicipal de Cootransfusa, se desarrolló una plataforma que permite a los conductores registrarse desde el terminal donde iniciarán su ruta. Cada noche, el sistema ejecuta un sorteo automático que define el orden y la hora de presentación para el primer trayecto del día siguiente",
@@ -207,9 +195,9 @@ export const projects = [
     gallery: []
   },
   {
-    id: 7,
+    id: 6,
     name: "Consultas de información para clientes preferenciales",
-    image: "projects/preferencial.png",
+    image: "preferencial.png",
     category: "Aplicación web",
     status: "Completado",
     description: "Cootransfusa ofrece un programa de beneficios para pasajeros frecuentes que incluye descuentos en pasajes, acceso prioritario en taquillas y el uso de una tarjeta preferencial para adquirir tiquetes con ventajas adicionales. Con el objetivo de modernizar este proceso y mejorar la experiencia del usuario, se desarrolló una plataforma que digitaliza por completo este sistema de beneficios. La solución integra una tarjeta virtual, permite a los pasajeros visualizar su saldo en tiempo real y consultar el historial de facturas de viajes dentro de un periodo determinado.",
@@ -223,4 +211,4 @@ export const projects = [
     githubUrl: "",
     gallery: []
   },
-  ];
+];

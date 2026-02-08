@@ -61,7 +61,7 @@ function Projects() {
               {/* Imagen del proyecto */}
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={project.image} 
+                  src={`projects/${project.image}`} 
                   alt={project.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

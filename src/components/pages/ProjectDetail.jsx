@@ -67,11 +67,11 @@ function ProjectDetail() {
                     }`}
                   >
                     <img 
-                      src={img} 
+                      src={`${import.meta.env.BASE_URL}projects/${img}`}
                       alt={`${project.name} - Imagen ${index + 1}`}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div className="absolute inset-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
                   </div>
                 ))
               ) : (
