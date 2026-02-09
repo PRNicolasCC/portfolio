@@ -100,6 +100,31 @@ export const experiences: Experience[] = [
 export const projects = [
   {
     id: 1,
+    name: "MiniERP",
+    image: "minierp.png",
+    category: "Sistema ERP",
+    status: "En desarrollo",
+    description: "Sistema integral de planificación de recursos empresariales diseñado para gestionar procesos administrativos, financieros y operativos de manera centralizada. Esta solución permite a las organizaciones controlar y optimizar sus recursos mediante módulos especializados que facilitan la toma de decisiones estratégicas basadas en datos en tiempo real",
+    features: [
+      "Gestión de inventarios y control de stock",
+      "Registro y seguimiento de proveedores",
+      "Gestión de facturación y cuentas por cobrar",
+      "Control de ventas y reportes de rendimiento",
+      "Panel de control con indicadores clave de desempeño",
+    ],
+    technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+    liveUrl: "",
+    githubUrl: "",
+    gallery: [
+      "minierp/1-login.png",
+      "minierp/2-dash.png",
+      "minierp/3-dash2.png",
+      "minierp/4-dash3.png",
+      "minierp/5-dash4.png"
+    ]
+  },
+  {
+    id: 2,
     name: "Mindraft",
     image: "mindraft.png",
     category: "Aplicación Web",
@@ -126,7 +151,7 @@ export const projects = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     name: "Consulta de información administrativa y financiera para asociados",
     image: "asociados.png",
     category: "Aplicación web",
@@ -166,7 +191,7 @@ export const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: "Gestión de monitoreo de vehículos del servicio intermunicipal",
     image: "monitoreo.png",
     category: "Aplicación web",
@@ -180,10 +205,18 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/monitoreo/",
     githubUrl: "",
-    gallery: []
+    gallery: [
+      "monitoreo/1-login.png",
+      "monitoreo/2-welcome.png",
+      "monitoreo/3-interno.png",
+      "monitoreo/4-registrar.png",
+      "monitoreo/5-historial.png",
+      "monitoreo/6-registros.png",
+      "monitoreo/7-modificar.png"
+    ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Actualización de datos de pasajeros",
     image: "pasajeros.png",
     category: "Aplicación web",
@@ -197,10 +230,15 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/registrofac/index.php?action=formulario",
     githubUrl: "",
-    gallery: []
+    gallery: [
+      "pasajeros/1-qr.png",
+      "pasajeros/2-documento.png",
+      "pasajeros/3-datos.png",
+      "pasajeros/4-datos2.png"
+    ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Sorteos para horarios de salida del transporte intermunicipal",
     image: "sorteos.png",
     category: "Aplicación web",
@@ -234,7 +272,60 @@ export const projects = [
     ]
   },
   {
-    id: 6,
+    id: 7,
+    name: "Consulta de certificados y extractos de nomina para empleados",
+    image: "empleados.jpg",
+    category: "Aplicación web",
+    status: "Completado",
+    description: "Plataforma diseñada para facilitar a los empleados el acceso a sus certificados laborales, extractos de nómina y documentos de interés. El sistema permite generar documentos oficiales de manera autónoma, optimizando los procesos administrativos y reduciendo la carga de trabajo del departamento de recursos humanos",
+    features: [
+      "Consulta de extractos de nómina por periodos",
+      "Generación de certificados laborales automáticos",
+      "Descarga de constancias de trabajo",
+      "Acceso a historial de pagos",
+      "Visualización de deducciones y prestaciones",
+    ],
+    technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+    liveUrl: "",
+    githubUrl: "",
+    gallery: [
+      "empleados/1-login.jpg",
+      "empleados/2-welcome.jpg",
+      "empleados/3-extractos.jpg",
+      "empleados/4-nomina.jpg",
+      "empleados/5-nomina2.jpg",
+      "empleados/6-certificado.jpg",
+      "empleados/7-certificado2.jpg"
+    ]
+  },
+  {
+    id: 8,
+    name: "Cálculo de comisiones de vehículos y conductores",
+    image: "comisiones.png",
+    category: "Aplicación web",
+    status: "Completado",
+    description: "Sistema de gestión de comisiones que automatiza el cálculo y registro de las comisiones tanto para vehículos como para conductores. Esta herramienta permite procesar grandes volúmenes de información de ventas, aplicar tasas de comisión variables y generar reportes detallados para auditoría y control financiero",
+    features: [
+      "Registro de ventas y producciones de vehículos",
+      "Configuración de tasas de comisión personalizables",
+      "Cálculo automático de comisiones por periodos",
+      "Generación de reportes de comisiones detallados",
+      "Historial de pagos y saldos pendientes",
+    ],
+    technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+    liveUrl: "",
+    githubUrl: "",
+    gallery: [
+      "comisiones/1-login.png",
+      "comisiones/2-conductor.png",
+      "comisiones/3-comision.png",
+      "comisiones/4-comision2.png",
+      "comisiones/5-vehiculo.png",
+      "comisiones/6-comision3.png"
+    ]
+  },
+  {
+    id: 9,
     name: "Consultas de información para clientes preferenciales",
     image: "preferencial.png",
     category: "Aplicación web",
@@ -248,6 +339,49 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/pasajeros/",
     githubUrl: "",
-    gallery: []
+    gallery: [
+      "preferencial/1-login.png",
+      "preferencial/2-tarjeta.png",
+      "preferencial/3-tarjeta2.png",
+      "preferencial/4-consulta.png",
+      "preferencial/5-tabla.png"
+    ]
+  },
+  {
+    id: 10,
+    name: "Inspecciones preoperacionales para vehículos de transporte público",
+    image: "inspeccion.jpg",
+    category: "Aplicación web",
+    status: "En desarrollo",
+    description: "Sistema digital para la gestión de inspecciones preoperacionales que deben realizar los vehículos de transporte público antes de iniciar cada viaje. La plataforma permite a los conductores completar listas de verificación estandarizadas, documentar el estado del vehículo y reportar anomalías mecánicas o de seguridad",
+    features: [
+      "Formularios de inspección digitalizados",
+      "Registro fotográfico del estado del vehículo",
+      "Reporte de anomalías y requerimientos de mantenimiento",
+      "Historial de inspecciones por vehículo",
+      "Notificaciones de mantenimiento preventivo",
+    ],
+    technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
+    liveUrl: "",
+    githubUrl: "",
+    gallery: [
+      "inspeccion/1-login.jpg",
+      "inspeccion/2-options.jpg",
+      "inspeccion/3-seleccionar.jpg",
+      "inspeccion/4-form.jpg",
+      "inspeccion/5-form2.jpg",
+      "inspeccion/6-form3.jpg",
+      "inspeccion/7-form4.jpg",
+      "inspeccion/8-form5.jpg",
+      "inspeccion/9-form6.jpg",
+      "inspeccion/10-form7.jpg",
+      "inspeccion/11-success.jpg",
+      "inspeccion/12-registros.jpg",
+      "inspeccion/13-detalle.jpg",
+      "inspeccion/14-detalle2.jpg",
+      "inspeccion/15-detalle3.jpg",
+      "inspeccion/16-detalle4.jpg",
+      "inspeccion/17-detalle5.jpg"
+    ]
   },
 ];
