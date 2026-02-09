@@ -9,7 +9,8 @@ import {
   SiFastapi,
   SiDjango,
   SiAngular,
-  SiTypescript
+  SiTypescript,
+  SiSqlite 
 } from "react-icons/si";
 import { FaBootstrap, FaLaravel, FaUbuntu, FaServer  } from "react-icons/fa";
 import { FaReact, FaWordpress, FaJava, FaFolderClosed  } from "react-icons/fa6";
@@ -42,6 +43,7 @@ const iconMap = {
   ubuntu: FaUbuntu,
   redhat: DiRedhat,
   docker: GrDocker,
+  sqlite: SiSqlite,
 
   website: TbWorld,
   code: FaFolderClosed,

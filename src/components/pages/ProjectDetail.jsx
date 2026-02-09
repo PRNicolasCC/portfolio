@@ -68,12 +68,12 @@ function ProjectDetail() {
       <div className="mb-6">
         <button 
           onClick={() => window.history.back()}
-          className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors"
+          className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors cursor-pointer"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-          Volver a proyectos
+          Volver
         </button>
       </div>
 
@@ -89,7 +89,6 @@ function ProjectDetail() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-xl font-semibold text-orange-400 mb-4">Galería del proyecto</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {project.gallery && project.gallery.length > 0 ? (
                 project.gallery.map((img, index) => (

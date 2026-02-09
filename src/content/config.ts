@@ -56,6 +56,7 @@ export const languages: Language[] = [
     },
     description: "Gestión de datos y administración de sistemas",
     technologies: [
+      { name: "SQLite", icon: "sqlite", classes: "text-blue-600" },
       { name: "MySQL", icon: "mysql", classes: "text-blue-800" },
       { name: "PostgreSQL", icon: "postgresql", classes: "text-blue-800" },
       { name: "Ubuntu", icon: "ubuntu", classes: "text-orange-500" },
@@ -114,13 +115,15 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://mindraft.nicolascueca.dev",
     githubUrl: "https://github.com/PRNicolasCC/mindraft",
-    gallery: ["mindraft/1-login.png",
-       "mindraft/2-dashboard.png",
-       "mindraft/3-nuevo-cuaderno.png",
-       "mindraft/4-editar-cuadernos.png",
-       "mindraft/5-notas.png",
-       "mindraft/6-nueva-nota.png",
-       "mindraft/7-editar-nota.png"]
+    gallery: [
+      "mindraft/1-login.png",
+      "mindraft/2-dashboard.png",
+      "mindraft/3-nuevo-cuaderno.png",
+      "mindraft/4-editar-cuadernos.png",
+      "mindraft/5-notas.png",
+      "mindraft/6-nueva-nota.png",
+      "mindraft/7-editar-nota.png"
+    ]
   },
   {
     id: 2,
@@ -141,7 +144,26 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "FirebirdSQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/gas_station/",
     githubUrl: "",
-    gallery: []
+    gallery: [
+      "asociados/1-login.png",
+      "asociados/2-welcome.png",
+      "asociados/3-tanqueos.png",
+      "asociados/4-producidos.png",
+      "asociados/5-posiciones.png",
+      "asociados/6-peajes.png",
+      "asociados/7-extractos.png",
+      "asociados/8-extractos2.png",
+      "asociados/9-extractos3.png",
+      "asociados/10-extractos4.png",
+      "asociados/11-cartera.png",
+      "asociados/12-fondo1.png",
+      "asociados/13-fondo7.png",
+      "asociados/14-certificaciones.png",
+      "asociados/15-certificaciones2.png",
+      "asociados/16-certificaciones3.png",
+      "asociados/17-cambiar-password.png",
+      "asociados/18-comunicados.png",
+    ]
   },
   {
     id: 3,
@@ -192,7 +214,24 @@ export const projects = [
     technologies: ["PHP", "JavaScript", "MySQL", "jQuery", "Bootstrap"],
     liveUrl: "https://cootransfusa.com/enturne_inter/",
     githubUrl: "",
-    gallery: []
+    gallery: [
+      "sorteos/1-login.jpg",
+      "sorteos/2-welcome.jpg",
+      "sorteos/3-vehiculos.jpg",
+      "sorteos/4-terminales.jpg",
+      "sorteos/5-consulta.jpg",
+      "sorteos/6-registros.jpg",
+      "sorteos/7-registros2.jpg",
+      "sorteos/8-registros3.jpg",
+      "sorteos/9-registros4.jpg",
+      "sorteos/10-registros5.jpg",
+      "sorteos/11-registros6.jpg",
+      "sorteos/12-registros7.jpg",
+      "sorteos/13-registros8.jpg",
+      "sorteos/14-registros9.jpg",
+      "sorteos/15-registros10.jpg",
+      "sorteos/16-registros11.jpg"
+    ]
   },
   {
     id: 6,
